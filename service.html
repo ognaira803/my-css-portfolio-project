@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="service.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+           <aside>
+         <nav class="navbar">
+
+        
+            <h1 class="log"><i class="fa fa-bars" id="btn"></i> <p class="logo">N<a href="" ><i class="uil uil-moon" id="dark"></i></a>N<span class="so">SO</span></p> </h1>
+        
+              <ul class="navlinks">
+                   <li><a href="index.html"><i class="fa fa-home"></i><p class="li">Home</p> </a>
+                        <span class="tooltip">Home</span>
+                   </li>
+                   <li><a href="about.html"><i class="fa fa-user"></i> <p class="li">About</p></a>
+                        <span class="tooltip">About</span>
+                   </li>
+                   <li><a href="resume.html"><i class="fa fa-id-card"></i><p class="li">Resume</p></a> 
+                       <span class="tooltip">Resume</span>
+                   </li>
+                   <li><a href="service.html"><i class="fa fa-globe"></i> <p class="li">Services</p></a>
+                      <span class="tooltip">Services</span>
+                   </li>
+                    <li><a href="contact.html"><i class="fa fa-envelope"></i> <p class="li">Contact</p></a>
+                       <span class="tooltip">Contact</span>
+                   </li>
+               </ul>
+ 
+              <div class="icons">
+                 <a href=""><i class="bi bi-twitter"></i></a>
+                 <a href=""><i class="bi bi-facebook"></i></a>
+                 <a href=""><i class="bi bi-linkedin"></i></a>
+                 <a href=""><i class="bi bi-instagram"></i></a>
+              </div>
+           </nav>
+       </aside>
+    <section>
+        <center><span class="serv"><h1>SERVICES</h1></span></center>
+        <div class="servall">
+            <div class="content">
+                <div class="card">
+                    <span class="one"><i class="uil uil-html5"></i></span>
+                    <h4>HTML</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+                <div class="card">
+                    <span class="two"><i class="uil uil-css3-simple"></i></span>
+                    <h4>CSS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+                <div class="card">
+                    <span class="three"><i class="uil uil-java-script"></i></span>
+                    <h4>JAVASCRIPT</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+                <div class="card">
+                    <span class="five"><i class="uil uil-react"></i></span>
+                    <h4>REACT</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+            </div>
+        
+            <div class="content">
+                <div class="card">
+                    <span class="four"><i class="uil uil-palette"></i></span>
+                    <h4>CorelDraw</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+                <div class="card">
+                    <span class="six"><i class="uil uil-pagerduty"></i></span>
+                    <h4>Photoshop</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+                <div class="card">
+                    <span class="seven"><i class="uil uil-adobe-alt"></i></span>
+                    <h4>Ilustrator</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+                <div class="card">
+                    <span class="eight"><i class="uil uil-wordpress-simple"></i></i></span>
+                    <h4>WordPress</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vitae quos earum explicabo sapiente maxime tempora eligendi amet ratione laboriosam nihil, corrupti velit, magni at voluptas culpa tenetur doloribus eaque.</p>
+                </div>
+            </div>
+            <div>
+
+            </div>
+    
+        </div>
+    </section>
+
+   
+</body>
+<footer >
+    <p class="copy">&copy; Copywrite <span class="so">Nonso</span>. All Rights Reserved</p>
+    <p class="design">Designed by OdogwuNonso</p>
+</footer>
+<script>
+    let btn= document.querySelector("#btn");
+    let navbar= document.querySelector(".navbar");
+
+    btn.onclick= function() {
+        navbar.classList.toggle("active");
+    }
+</script>
+<script src="./background.js"></script>
+</html>

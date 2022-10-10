@@ -1,0 +1,1915 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #eaece5;
+    overflow-x: hidden;
+}
+body.dark{
+    background: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+}
+body.dark .navbar{
+    background-color: #eaece5;
+    color: black;
+}
+h1{
+    font-size: 4vmin;
+}
+.so{
+    color: tomato !important;
+}
+/* .logo a i{
+    font-size: 3vmin;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    color: black;
+    background: whitesmoke;
+} */
+body.dark .logo a i{
+    color: black;
+    
+}
+a{
+    text-decoration: none;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    font-size: 2vmin;
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+    
+}
+.navlinks li{
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+body.dark .navlinks li a .li{
+    color: black;
+}
+.navlinks li:hover{
+    font-size: 2.5vmin;
+}
+a i{
+    color: whitesmoke;
+}
+body.dark a i{
+    color: black;
+}
+section{
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.dark section{
+    color: whitesmoke;
+}
+.ab{
+    position: relative;
+}
+.ab h1{
+    font-size: 5vmin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border-bottom: 3px solid crimson;
+    width: 0px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+body.dark .ab{
+    color: whitesmoke;
+}
+.ab::after{
+    content: '';
+    height: 5px;
+    width: 0%;
+    background: crimson;
+    position: absolute;
+    left: -8vmin;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.ab:hover::after{
+    width: 100px;
+}
+
+.first{
+    display: flex;
+    gap: 20px;
+    /* line-height: 40px; */
+    margin-left: 20px;
+}
+.img1{
+    width: 100%;
+    filter: saturate(0);
+}
+.img1:hover{
+    filter: saturate(1);
+}
+.firstinner{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+span{
+    font-weight: bolder;
+}
+body.dark .p1{
+    color: #eaece5 !important;
+}
+
+.overall{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+}
+.overall .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.overall .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.overall .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.overall .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+ 
+.overall .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 95) / 100);
+    stroke: #03a9f4;
+}
+
+.overall .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.overall .percent .number h2{
+    font-size: 48px;
+}
+.overall .percent .number h2 span{
+    font-size: 24px;
+}
+.overall .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.overal{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+}
+.overal .percen{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.overal .percen svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.overal .percen svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.overal .percen svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.overal .percen svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #03a9f4;
+}
+
+.overal .percen .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.overal .percen .number h2{
+    font-size: 48px;
+}
+.overal .percen .number h2 span{
+    font-size: 24px;
+}
+.overal .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.overa{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+}
+.overa .perce{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.overa .perce svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.overa .perce svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.overa .perce svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.overa .perce svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 88) / 100);
+    stroke: #03a9f4;
+}
+
+.overa .perce .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.overa .perce .number h2{
+    font-size: 48px;
+}
+.overa .perce .number h2 span{
+    font-size: 24px;
+}
+.overa .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.over{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+}
+.over .perc{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.over .perc svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.over .perc svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.over .perc svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.over .perc svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 100) / 100);
+    stroke: #03a9f4;
+}
+
+.over .perc .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+.over .perc .number h2{
+    font-size: 48px;
+}
+.over .perc .number h2 span{
+    font-size: 24px;
+}
+.over .text{
+    padding: 10px 0 0;
+    color: #999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+
+.wrap{
+    background: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap .wrapper{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 60px;
+}
+.wrapper span{
+    font-family: sans-serif;
+    color: #fff;
+    border: 5px solid crimson;
+    padding: 0 30px;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+.box{
+    display: inline-block;
+    overflow: hidden;
+    height: 1em;
+    line-height: 1em;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.box::after{
+    position: relative;
+    white-space: pre;
+    content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9";
+}
+.box.first-number::after{
+    animation: animate 1s steps(10) infinite;
+    animation-fill-mode: backwards;
+}
+.box.second-number::after{
+    animation: animate 10s steps(10)infinite;
+    animation-fill-mode: backwards;
+}
+.box.third-number::after{
+    animation: animate 100s steps(10)infinite;
+    animation-fill-mode: backwards;
+}
+.fact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.num{
+    font-size: 4.5rem;
+    color: #03a9f4;
+}
+
+.card__img{
+    width: 3em;
+    border-radius: 50%;
+    border: 2px solid #03a9f4;
+}
+.test{
+    display: grid;
+
+    grid-template-areas: 
+    'first first second third'
+    'fourth fift fift third'
+    ;
+    gap: 10px;
+}
+.card{
+    background:  black;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgb(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    margin-bottom: 10px;
+   
+}
+.card__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card__header h3{
+    font-size: 2vmin;
+}
+.card__header p{
+    font-size: 1.5vmin;
+    opacity: 50%;
+}
+.card__lead{
+    font-size: 2.5vmin;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.card__quote{
+    font-size: 1.8vmin;
+    line-height: 20px;
+    font-weight: 500;
+    opacity: 70%;
+}
+.card__test1{
+    grid-area: first;
+    background-image: url(./images/mquote.png);
+    background-repeat: no-repeat;
+    background-position: top -40px right -30px;
+    
+    
+}
+body.dark .card__test1{
+    background: #eaece5;
+    color: black;
+}
+.card__test2{
+    background: #5c6463;
+}
+.card__test3{
+    grid-area: third;
+}
+body.dark .card__test3{
+    background: #999;
+}
+.card__test5{
+    grid-area: fift;
+}
+body.dark .card__test5{
+    background: #999;
+}
+.card__test4{
+    grid-area: fourth;
+    background: #5c6361;
+}
+
+@keyframes animate{
+    0%{
+        top: 0%;
+    }
+
+    100%{
+        top: -10em;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: whitesmoke;
+    height: 100px;
+    font-size: 1.5rem;
+}
+body.dark footer{
+    background-color: #eaece5;
+    color: #000;
+}
+@media (max-width: 480px) {
+    body{
+        position: relative;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        overflow-x: hidden;
+    }
+    
+    .navbar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            color: whitesmoke;
+            background-color: rgb(0, 0, 0);
+            position: sticky;
+            top: 0;
+            width: 40px;
+            min-height: 100vh;
+            transition: all 0.5s ease;
+            z-index: 1;
+    }
+        
+    .navbar.active{
+            z-index: 1;
+            width: 240px;
+            height: 100vh;
+    }
+    
+    .logo{
+            opacity: 0;
+            pointer-events: none;
+    }
+    .navbar.active .log{
+        border: 2px solid crimson;
+        margin-right: -100px;
+    }
+    .navbar.active .logo{
+            border: 2px solid white;
+            opacity: 1;
+            margin-right: 0px;
+    }
+    .navlinks{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2vmin;
+            list-style-type: none;
+            display: flex;
+            gap: 80px;
+            margin-top: 30px;
+            margin-bottom: 35px;
+            margin-left: 20px;
+            
+    }
+    #btn{
+         position: absolute;
+            left: 20%;
+            top: 30px;
+            line-height: 30px;
+            text-align: center;
+            transform: translateX(-50%);
+    }
+    .navbar.active #btn{
+        left: 45%;
+        
+    }
+    .navlinks li{
+            position: relative;
+            transition: 0.5s ease-in-out;
+            
+            align-items: center;
+            padding-left: 50px;
+    }
+    .navlinks .navlinks li:hover{
+        background-color: whitesmoke !important;
+    }
+    .navbar li .li{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .navbar.active .li{
+        opacity: 1;
+        pointer-events: auto;
+        font-size: 0.8rem;
+        margin-bottom: -10px;
+    }
+    .navbar li a{
+        display: flex;
+        color: #fff;
+        align-items: center;
+    }
+    .navbar .navlinks li a p{
+        transition: 0.5s ease-in-out;
+    }
+    .navbar .navlinks li a p:hover{
+        font-size: 4vmin;
+    }
+    .icons{
+        margin-left: -20px;
+    }
+    .navbar.active .icons{
+        margin-left: 20px;
+    }
+        
+    
+        .navlinks li i{
+            height: 40px;
+            min-width: 50px;
+            border-radius: 12px;
+            line-height: 50px;
+            margin-left: -40px;
+            font-size: 20px;
+    }
+
+    .navlinks li .tooltip{
+            position: absolute;
+            left: 0%;
+            top: 0;
+            transform: translateY(-50% ,);
+            height: 35px;
+            width: 60px;
+            background: rgb(20, 20, 20);
+            color: whitesmoke;
+            box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 10px ;
+            line-height: 35px;
+            transition: 0s;
+            opacity: 0;
+            pointer-events: none;
+            display: block;
+            z-index: 1;
+    }
+    .navbar.active li .tooltip{
+            display: none;
+    }
+    .navlinks li:hover .tooltip{
+            transition: all 0.5s ease;
+            opacity: 1;
+            top: 40%;
+            left: 5%;
+            z-index: 1;
+    }
+
+    section{
+        /* max-width: 480px; */
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: -100px;
+        padding: 0;
+        width: min-content;
+    }
+    .ab{
+        font-size: 5vmin;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid crimson;
+        width: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .first{
+        display: flex;
+        gap: 20px;
+        /* line-height: 40px; */
+        margin-left: 0px;
+        max-width: 480px;
+        
+    }
+    .img1{
+        width: 5em;
+    }
+    .firstinner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 20px;
+        margin-bottom: 0px !important;
+        width: fit-content;
+
+    }
+    .pa{
+        font-size: 2.5vmin;
+    }
+    .spa{
+        font-weight: bolder;
+        font-size: 2.5vmin;
+    }
+    
+    .overall{
+        position: relative;
+        width: 170px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+    }
+    .overall .percent{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overall .percent svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overall .percent svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .overall .percent svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .overall .percent svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 95) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .overall .percent .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .overall .percent .number h2{
+        font-size: 48px;
+    }
+    .overall .percent .number h2 span{
+        font-size: 24px;
+    }
+    .overall .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .all{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        
+    }
+    
+    .overal{
+        position: relative;
+        width: 170px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+    }
+    .overal .percen{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overal .percen svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overal .percen svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .overal .percen svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .overal .percen svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 80) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .overal .percen .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .overal .percen .number h2{
+        font-size: 48px;
+    }
+    .overal .percen .number h2 span{
+        font-size: 24px;
+    }
+    .overal .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .overa{
+        position: relative;
+        width: 170px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+    }
+    .overa .perce{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overa .perce svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overa .perce svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .overa .perce svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .overa .perce svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 88) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .overa .perce .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .overa .perce .number h2{
+        font-size: 48px;
+    }
+    .overa .perce .number h2 span{
+        font-size: 24px;
+    }
+    .overa .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .over{
+        position: relative;
+        width: 170px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+    }
+    .over .perc{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .over .perc svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .over .perc svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .over .perc svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .over .perc svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 100) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .over .perc .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .over .perc .number h2{
+        font-size: 48px;
+    }
+    .over .perc .number h2 span{
+        font-size: 24px;
+    }
+    .over .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    
+    
+    
+    .wrap{
+        background: #262626;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap .wrapper{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 60px;
+    }
+    .wrapper span{
+        font-family: sans-serif;
+        color: #fff;
+        border: 5px solid crimson;
+        padding: 0 30px;
+        border-radius: 25px;
+        margin: 0 10px;
+    }
+    .box{
+        display: inline-block;
+        overflow: hidden;
+        height: 1em;
+        line-height: 1em;
+        font-weight: bold;
+        font-size: 5rem;
+    }
+    .box::after{
+        position: relative;
+        white-space: pre;
+        content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9";
+    }
+    .box.first-number::after{
+        animation: animate 1s steps(10) infinite;
+        animation-fill-mode: backwards;
+    }
+    .box.second-number::after{
+        animation: animate 10s steps(10)infinite;
+        animation-fill-mode: backwards;
+    }
+    .box.third-number::after{
+        animation: animate 100s steps(10)infinite;
+        animation-fill-mode: backwards;
+    }
+    .fact{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .num{
+        font-size: 1.5rem;
+        color: #03a9f4;
+    }
+    .fact .tex{
+         margin-left: 0px !important;
+         font-size: 0.8rem;
+         font-weight: 800 !important;
+    }
+    .allnum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card__img{
+        width: 3em;
+        border-radius: 50%;
+        border: 2px solid #03a9f4;
+    }
+    .test{
+        display: grid;
+    
+        grid-template-areas: 
+        'first first'
+        'second second'
+        'third third'
+        ' fourth fourth'
+        'fift fift'
+        ;
+        gap: 10px;
+    }
+    .card{
+        background:  black;
+        color: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: rgb(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        margin-bottom: 10px;
+       
+    }
+    .card__header{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .card__header h3{
+        font-size: 2vmin;
+    }
+    .card__header p{
+        font-size: 2.1vmin;
+        opacity: 50%;
+    }
+    .card__lead{
+        font-size: 2.5vmin;
+        line-height: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .card__quote{
+        font-size: 2.6vmin;
+        line-height: 20px;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .card__test1{
+        grid-area: first;
+        background-image: url(./images/mquote.png);
+        background-repeat: no-repeat;
+        background-position: top -40px right -30px;
+        background-size: 150px;
+        
+        
+    }
+    .card__test2{
+        grid-area: second;
+        background: #5c6463;
+    }
+    .card__test3{
+        grid-area: third;
+    }
+    .card__test5{
+        grid-area: fift;
+    }
+    .card__test4{
+        grid-area: fourth;
+        background: #5c6361;
+    }
+    
+    @keyframes animate{
+        0%{
+            top: 0%;
+        }
+    
+        100%{
+            top: -10em;
+        }
+    }
+    footer{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.849);
+        color: whitesmoke;
+        height: 100px;
+        width: 100vw;
+        font-size: 2vmin;
+
+        
+    }
+
+}
+    
+@media (min-width: 481px) and (max-width: 900px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        color: whitesmoke;
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100px;
+        z-index: 1;
+    }
+    .navbar.active{
+        z-index: 1;
+        height: 0%;
+}
+    .log{
+        display: flex;
+    }
+    h1{
+        font-size: 4vmin;
+  
+    }
+    #btn{
+        position: absolute;
+        right: 5%;
+    }
+    .logo{
+        position: absolute;
+    }
+    .so{
+        color: tomato;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .icons{
+        position: absolute;
+        left: 60%;
+    }
+    
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2vmin;
+        list-style-type: none;
+        display: flex;
+        gap: 0px;
+        position: fixed;
+        right: 10%;
+        margin-top: 35px;
+        display: none;
+    }
+    .navbar.active .navlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2vmin;
+        list-style-type: none;
+        display: flex;
+        gap: 0px;
+        position: fixed;
+        right: 15%;
+        margin-top: 35px;
+        animation-name: ul;
+        animation-duration: 1s;
+         animation-fill-mode: forwards;
+    }
+    /* @keyframes ul{
+        from{
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        to {
+            clip-path: polygon(0 1%, 100% 1%, 9000% 100%, 0 100%);
+        }
+    } */
+    .navlinks li{
+        position: relative;
+        transition: 0.5s ease-in-out;
+        width: 100%;
+        height: 3rem;
+    }
+    .navbar.active li{
+        animation: anLi 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+    }
+    .navbar.active li:nth-child(2){
+            animation-delay: 200ms;
+    }
+    .navbar.active li:nth-child(3){
+        animation-delay: 400ms;
+}
+.navbar.active li:nth-child(4){
+    animation-delay: 600ms;
+}
+.navbar.active li:nth-child(5){
+    animation-delay: 800ms;
+}
+    @keyframes anLi {
+        0%{
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+        100%{
+             transform: rotateZ(0) rotateX(0) scale(1);
+             opacity: 1;
+        }
+    }
+    .navlinks li a p{
+        color: whitesmoke;
+        background: black;
+        box-shadow: inset 20px 20px 20px 10px rgb(27, 27, 27);
+        width: 200%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .navlinks li a p:hover{
+         background: whitesmoke;
+         color: black;
+    }
+    .navlinks li:hover{
+        font-size: 2.5vmin;
+    }
+    .fa{
+        color: whitesmoke;
+    }
+    .navlinks li a i{
+        display: none;
+    }
+    .navlinks .tooltip{
+        display: none;
+    }
+    section{
+        max-width: 900px;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 90px;
+    }
+    .ab{
+        font-size: 5vmin;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid crimson;
+        width: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 20%;
+    }
+    .first{
+        display: flex;
+        gap: 20px;
+        /* line-height: 40px; */
+        margin-left: 20px;
+    }
+    .img1{
+        width: 7em;
+        filter: saturate(0);
+    }
+    .img1:hover{
+        filter: saturate(1);
+    }
+    .firstinner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 50px;
+    }
+    span{
+        font-weight: bolder;
+    }
+    
+    .overall{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+        margin-right: 20vmin;
+    }
+    .overall .percent{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overall .percent svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overall .percent svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .overall .percent svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .overall .percent svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 95) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .overall .percent .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .overall .percent .number h2{
+        font-size: 48px;
+    }
+    .overall .percent .number h2 span{
+        font-size: 24px;
+    }
+    .overall .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .all{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .overal{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+        margin-left: 20vmin;
+    }
+    .overal .percen{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overal .percen svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overal .percen svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .overal .percen svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .overal .percen svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 80) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .overal .percen .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .overal .percen .number h2{
+        font-size: 48px;
+    }
+    .overal .percen .number h2 span{
+        font-size: 24px;
+    }
+    .overal .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .overa{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+        margin-right: 20vmin;
+    }
+    .overa .perce{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overa .perce svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .overa .perce svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .overa .perce svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .overa .perce svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 88) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .overa .perce .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .overa .perce .number h2{
+        font-size: 48px;
+    }
+    .overa .perce .number h2 span{
+        font-size: 24px;
+    }
+    .overa .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .over{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, .2);
+        margin-left: 20vmin;
+    }
+    .over .perc{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .over .perc svg{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .over .perc svg circle{
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+    }
+    .over .perc svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #f3f3f3;
+    }
+    
+    .over .perc svg circle:nth-child(2){
+        stroke-dashoffset: calc(440 - (440 * 100) / 100);
+        stroke: #03a9f4;
+    }
+    
+    .over .perc .number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+    .over .perc .number h2{
+        font-size: 48px;
+    }
+    .over .perc .number h2 span{
+        font-size: 24px;
+    }
+    .over .text{
+        padding: 10px 0 0;
+        color: #999;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    
+    
+    
+    .wrap{
+        background: #262626;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap .wrapper{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 60px;
+    }
+    .wrapper span{
+        font-family: sans-serif;
+        color: #fff;
+        border: 5px solid crimson;
+        padding: 0 30px;
+        border-radius: 25px;
+        margin: 0 10px;
+    }
+    .box{
+        display: inline-block;
+        overflow: hidden;
+        height: 1em;
+        line-height: 1em;
+        font-weight: bold;
+        font-size: 5rem;
+    }
+    .box::after{
+        position: relative;
+        white-space: pre;
+        content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9";
+    }
+    .box.first-number::after{
+        animation: animate 1s steps(10) infinite;
+        animation-fill-mode: backwards;
+    }
+    .box.second-number::after{
+        animation: animate 10s steps(10)infinite;
+        animation-fill-mode: backwards;
+    }
+    .box.third-number::after{
+        animation: animate 100s steps(10)infinite;
+        animation-fill-mode: backwards;
+    }
+    .fact{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .num{
+        font-size: 7vmin;
+        color: #03a9f4;
+    }
+    .allnum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .p1{
+        color: rgb(27, 27, 27) !important;
+        font-size: 2.5vmin;
+    }
+    
+    .card__img{
+        width: 3em;
+        border-radius: 50%;
+        border: 2px solid #03a9f4;
+    }
+    .test{
+        display: grid;
+    
+        grid-template-areas: 
+        'first first second second'
+        'fourth fourth fift fift'
+        'third third third third'
+        ;
+        gap: 10px;
+    }
+    .card{
+        background:  black;
+        color: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: rgb(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        margin-bottom: 10px;
+       
+    }
+    .card__header{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .card__header h3{
+        font-size: 2vmin;
+    }
+    .card__header p{
+        font-size: 1.5vmin;
+        opacity: 50%;
+    }
+    .card__lead{
+        font-size: 2.5vmin;
+        line-height: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .card__quote{
+        font-size: 2vmin;
+        line-height: 20px;
+        font-weight: 500;
+        opacity: 70%;
+    }
+    .card__test1{
+        grid-area: first;
+        background-image: url(./images/mquote.png);
+        background-repeat: no-repeat;
+        background-position: top -40px right -30px;
+        
+        
+    }
+    .card__test2{
+        background: #5c6463;
+        grid-area: second;
+    }
+    .card__test3{
+        grid-area: third;
+    }
+    .card__test5{
+        grid-area: fift;
+    }
+    .card__test4{
+        grid-area: fourth;
+        background: #5c6361;
+    }
+    .tex{
+        margin-left: 0px !important;
+        font-weight: 800 !important;
+    }
+    
+    @keyframes animate{
+        0%{
+            top: 0%;
+        }
+    
+        100%{
+            top: -10em;
+        }
+    }
+    footer{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.849);
+        color: whitesmoke;
+        height: 100px;
+        width: 100vw;
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 0px;
+    
+        
+    }
+}
+    
+    @media (min-width: 901px) {
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            color: whitesmoke;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            width: 100vw;
+            z-index: 1;
+            top: 0;
+            
+        }
+        section{
+            padding-top: 100px;
+        }
+        h1{
+            font-size: 4vmin;
+        }
+        .so{
+            color: tomato;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        
+        .navlinks{
+            display: flex;
+            align-items: center;
+            font-size: 2vmin;
+            list-style-type: none;
+            display: flex;
+            gap: 80px;
+            
+        }
+        .navlinks li{
+            
+            border-bottom: 3px solid crimson;
+            border-bottom-width: 0;
+            transition: 0.5s ease-in-out;
+        }
+        .navlinks li:hover{
+            font-size: 2.5vmin;
+            border-bottom-width: 3px;
+        }
+        a i{
+            color: whitesmoke;
+        }
+        #btn{
+            display: none;
+       }
+       .navlinks li i{
+         display: none;
+    }
+    .navbar li .li{
+        color: whitesmoke;
+    }
+    .navbar li a{
+        font-weight: bolder;
+    }
+    .navlinks li .tooltip{
+    
+        display: none;
+    }
+    .allnum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tex{
+        margin-left: 0px !important;
+        font-weight: 800 !important;
+    }
+    }
+    

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="pot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+  <section class="overall">
+      <aside>
+         <nav class="navbar">
+        
+              <h1 class="log"><i class="fa fa-bars" id="btn"></i> <p class="logo">N<a href="" ><i class="uil uil-moon" id="dark"></i></a>N<span class="span">SO</span></p> </h1>
+        
+              <ul class="navlinks">
+                   <li><a href="index.html"><i class="fa fa-home"></i><p class="li">Home</p> </a>
+                        <span class="tooltip">Home</span>
+                   </li>
+                   <li><a href="about.html"><i class="fa fa-user"></i> <p class="li">About</p></a>
+                        <span class="tooltip">About</span>
+                   </li>
+                   <li><a href="resume.html"><i class="fa fa-id-card"></i><p class="li">Resume</p></a> 
+                       <span class="tooltip">Resume</span>
+                   </li>
+                   <li><a href="service.html"><i class="fa fa-globe"></i> <p class="li">Services</p></a>
+                      <span class="tooltip">Services</span>
+                   </li>
+                    <li><a href="contact.html"><i class="fa fa-envelope"></i> <p class="li">Contact</p></a>
+                       <span class="tooltip">Contact</span>
+                   </li>
+               </ul>
+ 
+              <div class="icons">
+                 <a href=""><i class="bi bi-twitter"></i></a>
+                 <a href=""><i class="bi bi-facebook"></i></a>
+                 <a href=""><i class="bi bi-linkedin"></i></a>
+                 <a href=""><i class="bi bi-instagram"></i></a>
+              </div>
+           </nav>
+       </aside>
+ 
+       <main>
+         <div class="name">
+            <div class="modal__div" id="modal">
+                <p>Are you sure you want to leave this page?</p>
+                <div>
+                    <button class="one" id="one"><a href="./about.html">Yes</a></button>
+                    <button class="two" id="two"><a href="">No</a></button>
+                </div>
+            </div>
+          <!-- <h1 class="emma">Emmanuel Chinonso Ononiwu</h1> -->
+          <h1 class="emm" data-text="Emmanuel Chinonso Ononiwu">Emmanuel Chinonso Ononiwu</h1>
+          <p class="prof">I'm a Professional Web Developer.</p>
+          <button class="but" ><a href="" id="button">ABOUT ME</a></button>
+          </div>
+        </main>
+    </section>
+</body>
+<footer >
+        <p class="copy">&copy; Copywrite <span>Nonso</span>. All Rights Reserved</p>
+        <p class="design">Designed by OdogwuNonso</p>
+</footer>
+<script>
+        let btn= document.querySelector("#btn");
+        let navbar= document.querySelector(".navbar");
+
+        btn.onclick= function() {
+            navbar.classList.toggle("active");
+        }
+
+
+        let button = document.getElementById('button')
+        let modal =document.getElementById('modal')
+        let no =document.getElementById('two')
+        const html = document.querySelector('html')
+        button.addEventListener('click', function(e) {
+            e.preventDefault()
+            modal.style.display = 'block';
+        });
+        no.addEventListener('clæick', function(e) {
+            e.preventDefault()
+            modal.style.display = 'none';
+        });
+        window.addEventListener('click', function(e) {
+            if (e.target === html) {
+                modal.style.display = 'none';
+            }
+        });
+</script>
+<script src="./background.js"></script>
+</html>
